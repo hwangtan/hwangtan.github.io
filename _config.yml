@@ -1,15 +1,15 @@
 # Site Settings
-title: Jekflix | A theme for Jekyll
-email: youremail@xyz.com
-description: Some text about your blog.
-baseurl: "/jekflix-template" # the subpath of your site, e.g. /blog
-url: "https://www.rossener.com" # the base hostname & protocol for your site
+title: Jacob World
+email: holypoll@naver.com
+description: hello.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jacob-dev.com" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
-username: Jekflix
+username: Jacob's Blog
 user_description: Some text about you.
-disqus_username: disqus_username
+disqus_username: hwangtan
 
 # Social Media
 # Remove the item if you don't need it
@@ -26,7 +26,7 @@ highlighter: rouge
 permalink: /:title/
 
 # Plugins
-gems:
+plugins:
   - jemoji
 
 # Links to include in menu navigation
