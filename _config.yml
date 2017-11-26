@@ -1,5 +1,5 @@
 # Site Settings
-title: Jacob World
+title: Welcome to Jacob's dev World!
 email: holypoll@naver.com
 description: hello.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -7,18 +7,15 @@ url: "https://jacob-dev.com" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
-username: Jacob's Blog
-user_description: Some text about you.
+username: Jacob Hwang 
+user_description: 웹기반 기술에 관심이 많은 개발자 입니다.
 disqus_username: hwangtan
 
 # Social Media
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: hwangtan
+facebook_username: holypoll
+linkedin_username: hwangtan
 
 # Build settings
 markdown: kramdown
