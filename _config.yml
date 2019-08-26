@@ -7,7 +7,7 @@ url: "https://jacob-dev.com" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
-username: Jacob Hwang 
+username: Jacob Hwang
 user_description: 웹기반 기술에 관심이 많은 개발자 입니다.
 disqus_username: jacob-dev
 
@@ -23,8 +23,6 @@ highlighter: rouge
 permalink: /:title/
 
 # Plugins
-plugins:
-  - jemoji
 
 # Links to include in menu navigation
 # For external links add external: true
@@ -37,4 +35,4 @@ links:
     url: /contact/
 
 # Exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+exclude: ["package.json", "src", "node_modules"]
