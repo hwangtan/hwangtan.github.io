@@ -1,38 +1,91 @@
 # Site Settings
-title: Welcome to Jacob's dev World!
+name: Jekflix
+title: Jekflix | A blog theme for Jekyll
+description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+tags:
+  - blog
+  - template
+  - jekyll
+  - theme
+  - netlify
 email: holypoll@naver.com
-description: hello.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jacob-dev.com" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+disqus_username: disqus_username
+show_hero: true
 
-# User Settings
-username: Jacob Hwang
-user_description: 웹기반 기술에 관심이 많은 개발자 입니다.
-disqus_username: jacob-dev
 
-# Social Media
+# Social Media Settings
 # Remove the item if you don't need it
-github_username: hwangtan
-facebook_username: holypoll
-linkedin_username: hwangtan
+github_username: github_username
+facebook_username: facebook_username
+twitter_username: twitter_username
+instagram_username: instagram_username
+linkedin_username: linkedin_username
+medium_username: medium_username
+
+
+# Theme Settings
+themeColor: "#ff0a16"
+primaryDark: "#141414"
+accentDark: "#ffffff"
+lightGray: "#f2f2f2"
+texts: "#333333"
+
+
+# Posts Settings
+show_time_bar: true
+show_modal_on_exit: false
+show_modal_on_finish_post: true
+two_columns_layout: true
+
+
+# Advanced Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
+language: "en"
+
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
+collections:
+  authors:
+    output: true
+paginate_path: "/page/:num/"
+
+# Content paginator
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
 
 # Plugins
-
-# Links to include in menu navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-  - title: Contact
-    url: /contact/
+plugins:
+  - jekyll-paginate
+  - jekyll-paginate-content
 
 # Exclude my node related stuff
-exclude: ["package.json", "src", "node_modules"]
+exclude: [
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]
