@@ -1,15 +1,15 @@
 ---
 layout: author
 photo: /assets/img/uploads/profile.png
-name: thiagorossener
-display_name: Thiago Rossener
-position: Chief Editor
+name: jacob
+display_name: jacob hwang
+position: Software Engineer
 bio: Just a developer.
-github_username: thiagorossener
-facebook_username: thiagorossener
-twitter_username: thiagorossener
-instagram_username: thiagorossener
-linkedin_username: thiagorossener
-medium_username: thiagorossener
+github_username: hwangtan
+facebook_username: hwangtan
+twitter_username: ''
+instagram_username: ''
+linkedin_username: hwangtan
+medium_username: hwangwonjun
 ---
 
