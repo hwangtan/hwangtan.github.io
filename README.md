@@ -2,7 +2,8 @@
 
 # Jekflix Template
 
-Version 2.0 is [here](https://github.com/thiagorossener/jekflix-template#v200)! 🎉🎊
+
+version 2.0 is [here](https://github.com/thiagorossener/jekflix-template#v200)! 🎉🎊
 
 ![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
 
