@@ -1,14 +1,23 @@
-name: Jacob-dev
-title: Jekflix | A blog theme for Jekyll
-description: >-
-  Jekflix is a template for Jekyll inspired by Netflix and made by Thiago
-  Rossener.
+name: JACOB-DEV
+title: Software Engineering for Everyone
+description: This is a blog created to share my engineering experience.
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - react
+  - typescript
+  - aws
+  - redux
+  - mobx
+  - mst
+  - styled-components
+  - graphql
+  - gatsby
+  - nextjs
+  - apollo
+  - apollo-client
+  - esnext
+  - es6+
+  - es7
+  - es8
 show_hero: true
 email: hwangwonjun@gmail.com
 disqus_username: disqus_username
