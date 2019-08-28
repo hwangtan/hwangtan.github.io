@@ -1,132 +1,92 @@
 ---
-date: 2019-05-16 23:48:05
+date: '2018-10-03 08:48:05'
 layout: post
-title: Welcome to the desert of the real
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+title: OKKY TDD Conference
+subtitle: ''
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
-image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
-optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  메모 하기 보다는 듣는것을 중요하게 생각 하여서  듣고 느낀것들 생각나는 것들을 정리해 봤습니다. 제 뇌속에서 한번 필터링 되서 나오다
+  보니  잘못된 생각이나, 틀린 내용들이 있을수 있습니다. 그래서 발표자료를 참고해 주시면 좋을것 같습니다.
+image: /assets/img/uploads/2123123123.png
 category: blog
 tags:
   - welcome
   - blog
-author: thiagorossener
-paginate: true
+author: jacob
+paginate: false
 ---
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+### 세션들
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+개인적으로 인상 깊었던 세션들만 요약 했다.
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+**정진욱 - 테스트하기 쉬운 코드로 개발하기**
 
-## Inline HTML elements
+테스트 하기 쉬운 코드란 순수함수로 작성된 코드들 이다.
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+순수함수 라는것은 같은 입력에 항상 같은 결과를 반환 하며 외부상태를 변경하지 않는 함수를 말한다.
 
-* **To bold text**, use `<strong>`.
-* _To italicize text_, use `<em>`.
-* Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-* Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-* <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-* Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+현실에서는 불순한 코드 (DB 연결, DOM 접근) 와 순수한 코드가 혼재 한다.
 
-Most of these elements are styled by browsers with few modifications on our part.
+그래서 순수한 코드들을 불순한 코드로 부터 격리 시키고 이를 테스트 하는것 부터 시작 하면 된다.
 
-# Heading 1
+**박재성 - 의식적인 연습으로 TDD, 리팩토링 연습 하기**
 
-## Heading 2
+TDD의 현실적인 어려움을 설파하는 모습이 인상 깊었다.
 
-### Heading 3
+의식적인 연습을 통해서 불순한 코드와 순수한 코드를 보는 눈이
 
-#### Heading 4
+생기고, 어려운 코드를 쉬운코드로 설계하는 센스가 생기는것 같다 라고 했다.
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+의식적인 연습을 강조하였는데 PEAK 라는 책을 설명하면서 구체적인
 
---page-break--
+실천방법에 대해서 이야기 하였다.
 
-## Code
+그리고 TDD 연습은 프로덕션 보다는 토이 프로젝트로 외부 의존
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+관계를 가지고 있지 않는것으로 시작하는것이 좋다고 하였다.
 
-```js
-// Example can be run directly in your JavaScript console
+단위 테스트를 언제 하는지 보단 쉬운 구조로 설계 하는것이
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+중요하다는 맺음말이 생각 난다.
 
-// Call the function
-adder(2, 6);
-// > 8
-```
+**이혜승 - 테알못 신입은 어떻게 테스트를 시작했을까**
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+작은곳에서 부터 시작을 이야기한다. e.g) 유틸성 함수들, 헬퍼 함수들
 
-## Lists
+테스트 케이스를 작성하면서 설계상에 오류를 발견하는 효과를 경험했다. e.g) 하나의 함수 역할이 많아지는것
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+실수:커버리지를 높이기 위해 테스트를 위한 코드를 작성했다
 
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
+(불필요한 테스트 케이스 작성, TDD 중독) e.g) div 에 2번째
 
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+자식 엘리먼트가 p 태그이고 그안에 텍스트 값을 테스트 한다고
 
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
+했을때 div 와 p 태그가 존재하는지 까진 테스트할 필요가 없는것
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+같다.
 
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+### 후기
 
-## Images
+한가지 주제(TDD)로 이야기 하는 컨퍼런스 참여는 처음인것 같다.
 
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
+같은주제로 이야기 하다 보니 경험은 다르지만, 공통 되는 내용들이
 
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
+있었고 그것을 통해 TDD 에서 발표자들이 일관되게 무엇을 이야기
 
-## Tables
+하고자 했는지 그 의미가 잘 전달이 된것 같다.
 
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+생각나는 내용은 이정도 인것 같다.
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
+1. 테스트를 하기 좋은 함수란 순수 함수를 말한다.
+    1. 외부의 상태를 변경하지 않는다.
+    2. 동일한 인자를 주었을때 항상 같은 값을 리턴한다.
+2. 테스트를 하기 좋은 코드를 짜려면 함수를 잘 나눠야한다.
+    - 테스트하기 어려운 코드와 쉬운(순수함수) 코드를 분리 하고 쉬운것 부터 해나간다.
+3. TDD 를 했을때 삶의 여유가 찾아 올까?
+    - TDD 를 실천하면 오류발생률이 줄어들고 버그 수정이나 추가 개발을 효율적으로 하게 된다.
+4. TDD 는 어렵다.
+    - 변화무쌍한 비즈니스 요건에서 테스트 케이스가 발목을 잡는다면, 잘못된 테스트를 하고 있을 가능성이 높다. 코드의 설계를 검토 하자.
+5. TDD 를 도입 하자. 어떻게 설득 하지?
+    - 신입일 경우 의견이 무시 되는 경우가 있다 토이 프로젝트를 통해 작은것 부터 훈련을 시작하는것이 좋다.
+    - 책임자일 경우 TDD를 강제하기 보단 팀내에서 자발적으로 할수있는 환경을 만들어 주는것이 중요하다.
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+[발표자료](https://okky.kr/article/514367)
