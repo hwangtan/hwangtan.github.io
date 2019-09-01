@@ -1,7 +1,7 @@
 ---
 layout: author
-photo: /assets/img/uploads/65958718_10214277827570623_5093112518998491136_n.jpg
-name: Wonjun
+photo: /assets/img/uploads/wj.png
+name: jacob
 display_name: Hwang Wonjun
 position: Software Engineer
 bio: Just a developer.
