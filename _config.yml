@@ -39,7 +39,8 @@ two_columns_layout: true
 
 
 # Advanced Settings
-url: "https://jacob-dev.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "" # the base hostname & protocol for your site
 google_analytics: "UA-75905743-2"
 language: "en"
 
