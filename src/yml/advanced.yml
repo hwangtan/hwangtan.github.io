@@ -1,4 +1,4 @@
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
-language: "en"
+baseurl: /
+url: 'https://jacob-dev.com'
+google_analytics: UA-75905743-2
+language: en
