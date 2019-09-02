@@ -8,8 +8,8 @@ description: >-
 image: /assets/img/uploads/k162434762_1.jpg
 category: blog
 tags:
-  - welcome
-  - blog
+  - Book
+  - agile
 author: jacob
 paginate: false
 ---

@@ -5,7 +5,7 @@ title: Clean Code JS Version
 subtitle: ''
 description: >-
  즐겨 찾기 해놨던 클린코드 저장소에 있는 글을 이해 하면서 공부를 위해 작성해본 아티클 입니다.
-image: /assets/img/uploads/800x0.png
+image: /assets/img/uploads/800x0.jpg
 category: blog
 tags:
   - welcome

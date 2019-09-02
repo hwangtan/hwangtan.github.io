@@ -6,10 +6,10 @@ subtitle: ''
 description: >-
  현재는 flex 를 통해 쉽게 레이아웃을 그리고 있지만, 전통적인 웹에서 레이아웃을 그릴 때 position 과 float 을 이용해 화면을 그리고 있고 아직도 많은 시스템들이 이 전통적인 레이아웃 작성 방식을 따르고 있다.(GRID, FLEX 등에 이전세대를 legacy layout 이라 부른다.)
 image: /assets/img/uploads/old-bannack-townsite-4027297_640.jpg
-category: blog
+category: CSS
 tags:
-  - welcome
-  - blog
+  - layout
+  - float
 author: jacob
 paginate: false
 ---

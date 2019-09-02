@@ -8,8 +8,8 @@ description: >-
 image: /assets/img/uploads/notebook-1850613_1920.jpg
 category: blog
 tags:
-  - welcome
-  - blog
+  - Spreadsheet
+  - database
 author: jacob
 paginate: false
 ---

@@ -12,8 +12,8 @@ description: >-
 image: /assets/img/uploads/8966262333_1.jpg
 category: blog
 tags:
-  - welcome
-  - blog
+  - Book
+  - Agile
 author: jacob
 paginate: false
 ---

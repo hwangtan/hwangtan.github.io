@@ -8,8 +8,8 @@ description: >-
 image: /assets/img/uploads/mf.jpg
 category: blog
 tags:
-  - welcome
-  - blog
+  - Frontend
+  - Architecture
 author: jacob
 paginate: false
 ---
