@@ -6,9 +6,7 @@ display_name: Hwang Wonjun
 position: Software Engineer
 bio: Just a developer.
 github_username: hwangtan
-facebook_username: hwangtan
-twitter_username: ''
-instagram_username: ''
+facebook_username: holypoll
 linkedin_username: hwangtan
 medium_username: hwangwonjun
 ---
