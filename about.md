@@ -15,7 +15,7 @@ permalink: /about/
 
 
 <div id="root"></div>
-<script>
+<script js>
         ! function (f) {
             function e(e) {
                 for (var r, t, n = e[0], o = e[1], u = e[2], l = 0, a = []; l < n.length; l++) t = n[l], Object
@@ -91,5 +91,5 @@ permalink: /about/
             i()
         }([])
     </script>
-    <script src="/assets/js/2.53703bf6.chunk.js"></script>
-    <script src="/assets/js/main.1067cece.chunk.js"></script>
+<script src="/assets/js/2.53703bf6.chunk.js"></script>
+<script src="/assets/js/main.1067cece.chunk.js"></script>
