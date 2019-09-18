@@ -5,6 +5,7 @@ title: ES Next New Features and My Thought
 description: >-
   ES2016 ~ ES2019 까지 이미 잘 쓰고 있는 새로운 기능들도 있지만, 다소 활용하지 못하고 있는 기능들도 있었다. 깃허브의 트렌트
   레포에 올라온 링크를 참고해서 내 생각들 기억해야할 것들을 정리해 보려 한다. 
+image: /assets/img/uploads/screen-shot-2019-09-18-at-11.11.08-pm.png
 category: code
 tags:
   - Object.entries
