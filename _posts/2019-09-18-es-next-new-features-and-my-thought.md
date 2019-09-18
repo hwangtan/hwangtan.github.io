@@ -11,6 +11,4 @@ tags:
 author: jacob
 paginate: false
 ---
-```javascript
-const a = 1;
-```
+투스트링 오브 널이라니.
