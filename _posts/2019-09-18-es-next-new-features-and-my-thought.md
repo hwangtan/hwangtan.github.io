@@ -122,4 +122,4 @@ const asciiOfAlphabetMap = new Map(Object.entries(asciiOfAlphabet));
 
 ## Conclusion
 
-`Object.entries`와`Object.fromEntries`를 이용해서 객체를 맵으로 맵을 객체로 쉽게 변환 할수있었다.
+`Object.entries`와`Object.fromEntries`를 이용해서 객체를 맵으로 맵을 객체로 쉽게 변환 할수 있었다.
