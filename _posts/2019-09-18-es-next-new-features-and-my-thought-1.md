@@ -1,15 +1,19 @@
 ---
 date: '2019-09-18 22:51:11'
 layout: post
-title: ES Next New Features and My Thought
-subtitle: 배열과 객체 그리고 맵
+title: How Can I Change That? Map to Object OR Object to Map
+subtitle: Map to Object OR Object to Map
 description: >-
-  ES2016 ~ ES2019 까지 이미 잘 쓰고 있는 새로운 기능들도 있지만, 다소 활용하지 못하고 있는 기능들도 있었다. 깃허브의 트렌트
+  ES2016 ~ ES2019 까지 이미 잘 쓰고 있는 새로운 문법도 있지만, 다소 활용하지 못하고 있는 문법들도 있었다. 깃허브의 트렌트
   레포에 올라온 링크를 참고해서 내 생각들 기억해야할 것들을 정리해 보려 한다. 
-image: /assets/img/uploads/screen-shot-2019-09-18-at-11.11.08-pm.png
+image: /assets/img/uploads/screen-shot-2019-09-19-at-12.48.12-am.png
 category: code
 tags:
-  - ㅇ
+  - fromEntries
+  - Object.fromEntries
+  - Object.entries
+  - Object to Map
+  - Map to Object
 author: jacob
 paginate: false
 ---
@@ -48,4 +52,31 @@ Map 에 데이터를 설정하는 방법은 set 메소드를 이용하거나(Cha
 
 개발을 하다보면 데이터를 효율적으로 다루기 위해 배열, 객체, 맵(이터러블) 간에 변환이 필요한 경우가 꾀 빈번하게 생기게 된다. 경우를 생각해 보면 다음과 같다.
 
-* 맵을 배열로 변
+* 맵을 객체로 변환
+* 객체를 맵으로 변환
+
+두가지의 경우 앞서 소개한 문법을 사용했을때와 사용하지 않았을때 예를 들어보자.
+
+## Map to Object
+
+알파벳 A,B,C 를 key 로 이에 해당하는 ascii 코드를 value 로 가진 Map 이 존재 한다. 이를 객체로 변환하기 위해선 Map 에 있는 헬퍼 메소드를 이용 했을때 다음과 같이 구현해 볼수 있을것 같다.
+
+```
+const asciiOfAlphabetMap = new Map().set("A", "A".charCodeAt()).set("B", "B".charCodeAt()).set("C", "C".charCodeAt());// badconst asciiOfAlphabet = {};asciiOfAlphabetMap.forEach((value, key) => {  asciiOfAlphabet[key] = value;});// betterconst asciiOfAlphabet = Array.from(asciiOfAlphabetMap.entries()).reduce((accumulator, currentValue) => {  const [key, value] = currentValue;  accumulator[key] = value;  return accumulator;}, {});// goodconst asciiOfAlphabet = Object.fromEntries(asciiOfAlphabetMap);
+```
+
+Map 에 set 된 데이터는 이터러블 하지만, 생성자에 인자로 값을 할당 했을때 를 생각해보면 `Object.fromEntries  `를 이용해 쉽게 변환이 가능하다는 것을 알 수 있다.
+
+## Object to Map
+
+이번엔 반대로 객체를 맵으로 변환해 보겠다.
+
+```
+const asciiOfAlphabet = {  A: "A".charCodeAt(),  B: "B".charCodeAt(),  C: "C".charCodeAt(),}//badconst asciiOfAlphabetMap = new Map();Object.keys(asciiOfAlphabet).forEach(key => {  asciiOfAlphabetMap.set(key, asciiOfAlphabet[key]);});//betterconst twoDimensionalArray = Object.keys(asciiOfAlphabet).map(key => [key, asciiOfAlphabet[key]);const asciiOfAlphabetMap = new Map(twoDimensionalArray);//goodconst asciiOfAlphabetMap = new Map(Object.entries(asciiOfAlphabet));
+```
+
+이번에도 역시 `Object.entries` 를 이용해서 쉽게 변환 할 수 있었다.
+
+## Conclusion
+
+`Object.entries `와` Object.fromEntries `를 이용해서 객체를 맵으로 맵을 객체로 변환하는 문법에 대해서 알게된것이 나에게 도움이 된것 같다. 그 외에  이차원 배열을 평탄하게 해주는 flat, flatMap 이나
