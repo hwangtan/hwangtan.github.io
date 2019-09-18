@@ -10,6 +10,10 @@ image: /assets/img/uploads/screen-shot-2019-09-19-at-12.48.12-am.png
 category: blog
 tags:
   - fromEntries
+  - Object.fromEntries
+  - Object.entries
+  - Object to Map
+  - Map to Object
 author: jacob
 paginate: false
 ---
