@@ -13,13 +13,16 @@ tags:
 author: jacob
 paginate: false
 ---
-
 ES5 에서 ES6 로 넘어 오면서 문법적으로 정말 많은 혁신이 이루어졌다고 생각 한다. 
 
-Javascript 를 주언어로 사용하다보니 이미 잘 사용하고 있는 문법들이 다수 이지만, 사용하지 않는 
+깃허브 트렌드를 보다가 [ECMAScript-new-features-list](https://github.com/daumann/ECMAScript-new-features-list) 가 눈에 들어 왔다. 
 
+자바스크립트를 주 언어로 사용하고 있고, 여러 문법들을 다수 사용하고 있지만 몇가지 문법들은 사용하지 않는 것들도 있었다. 그래서 오늘은 사용해오지 않았던 문법들에 대해서 어떻게 활용하면 좋을지에 대한 기록을 남기고자 글을 작성해 본다.
 
+## Object.fromEntries
 
-## Reference
+2차원 배열을 객체로 변환시켜 준다.
 
-[ECMAScript-new-features-list](https://github.com/daumann/ECMAScript-new-features-list)
+```js
+const array = [["A", 1], ["B", 2]];
+```
