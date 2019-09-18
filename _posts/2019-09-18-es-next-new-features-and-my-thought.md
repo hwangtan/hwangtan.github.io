@@ -1,7 +1,7 @@
 ---
 date: '2019-09-18 22:51:11'
 layout: post
-title: How Can I Change That? Map to Object OR Object to Map
+title: ES Next New Features And My Thought
 subtitle: Map to Object OR Object to Map
 description: >-
   ES2016 ~ ES2019 까지 이미 잘 쓰고 있는 새로운 문법도 있지만, 다소 활용하지 못하고 있는 문법들도 있었다. 깃허브의 트렌트
