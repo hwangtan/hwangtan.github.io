@@ -1,6 +1,6 @@
 # Site Settings
 name: JACOB-DEV
-title: Software Engineering for Everyone
+title: Software Engineering.
 description: This is a blog created to share my engineering experience.
 tags:
   - react
@@ -19,9 +19,18 @@ tags:
   - es6+
   - es7
   - es8
-show_hero: true
 email: hwangwonjun@gmail.com
 disqus_username: hwangtan
+show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Feed
+    url: /feed.xml
 
 
 # Social Media Settings
@@ -30,14 +39,6 @@ github_username: hwangtan
 facebook_username: holypoll
 linkedin_username: hwangtan
 medium_username: hwangwonjun
-
-
-# Theme Settings
-themeColor: "#ff0a16"
-primaryDark: "#141414"
-accentDark: "#ffffff"
-lightGray: "#f2f2f2"
-texts: "#333333"
 
 
 # Posts Settings
@@ -52,6 +53,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-75905743-2"
 language: "en"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
+
 
 # Build settings
 markdown: kramdown
@@ -61,6 +65,8 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
+show_get_theme_btn: true
+use_logo: false
 
 # Content paginator
 paginate_content:
@@ -80,6 +86,10 @@ paginate_content:
     single:
       is_generated: true
 
+# SASS
+sass:
+  style: compressed
+
 # Plugins
 plugins:
   - jekyll-paginate
@@ -97,3 +107,6 @@ exclude: [
   'gulpfile.js',
   'README.md'
 ]
+
+# Theme
+version: v3.1.0
