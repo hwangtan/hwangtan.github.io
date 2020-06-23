@@ -1,6 +1,6 @@
 # Site Settings
-name: JACOB-DEV
-title: Software Engineering.
+name: JACOB
+title: Software Engineering
 description: This is a blog created to share my engineering experience.
 tags:
   - react
@@ -27,8 +27,6 @@ menu:
     url: /
   - title: About
     url: /about
-  - title: Contact
-    url: /contact
   - title: Feed
     url: /feed.xml
 
