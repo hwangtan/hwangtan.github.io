@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "jekflix"
 gem "rouge"
 gem "jekyll"
 gem "jekyll-paginate"

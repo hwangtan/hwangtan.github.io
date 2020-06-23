@@ -108,5 +108,7 @@ exclude: [
   'README.md'
 ]
 
+theme: jekflix
+
 # Theme
 version: v3.1.0

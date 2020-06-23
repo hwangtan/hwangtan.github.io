@@ -97,10 +97,6 @@ body {
     border-radius: rem(5px);
     float: right;
     margin: rem(5px) rem(15px) rem(5px) rem(5px);
-
-    @include media(">=sm") {
-      display: inline-block;
-    }
   }
 }
 
