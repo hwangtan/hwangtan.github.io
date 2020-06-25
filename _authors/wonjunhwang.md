@@ -1,8 +1,8 @@
 ---
 layout: author
 photo: /assets/img/uploads/wj.png
-name: jacob
-display_name: WONJUN_HWANG
+name: Jacob
+display_name: Jacob
 position: Software Engineer
 bio: Learn, Think, Share
 github_username: hwangtan
