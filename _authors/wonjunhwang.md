@@ -2,12 +2,11 @@
 layout: author
 photo: /assets/img/uploads/wj.png
 name: jacob
-display_name: Hwang Wonjun
+display_name: WONJUN_HWANG
 position: Software Engineer
-bio: Just a developer.
+bio: Learn, Think, Share
 github_username: hwangtan
 facebook_username: holypoll
 linkedin_username: hwangtan
 medium_username: hwangwonjun
 ---
-
