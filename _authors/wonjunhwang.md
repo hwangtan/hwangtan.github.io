@@ -1,7 +1,7 @@
 ---
 layout: author
 photo: /assets/img/uploads/wj.png
-name: Jacob
+name: jacob
 display_name: Jacob
 position: Software Engineer
 bio: Learn, Think, Share
